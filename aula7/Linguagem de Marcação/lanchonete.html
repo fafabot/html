@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurante</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; color: #333;">
+
+    <!-- Cabeçalho -->
+    <header style="background-color:#023047; color:white; padding:20px; text-align:center;">
+        <h1>Inauguração do Restaurante Sabores do Mundo</h1>
+    </header>
+
+    <!-- Imagem -->
+    <img src="restaurante.jpeg" 
+         alt="Restaurante Sabores do Mundo"
+         style="margin:20px auto; border-radius:8px; max-width:300px; display:block;">
+
+    <!-- Sobre nós -->
+    <section style="max-width:600px; margin:20px auto; text-align:left;">
+        <p>
+            O Restaurante <strong>Sabores do Mundo</strong> nasce com a proposta de proporcionar uma viagem culinária inesquecível, reunindo receitas de diferentes culturas em um espaço aconchegante e acolhedor para toda a família.
+        </p>
+
+        <br>
+
+        <h2>Pratos Especiais da Inauguração</h2>
+        <ul style="margin:10px 0; padding-left:20px;">
+            <li>Risoto</li>
+            <li>Sushi</li>
+            <li>Hambúrguer</li>
+            <li>Pizza</li>
+        </ul>
+    </section>
+
+    <br>
+
+    <!-- Formulário -->
+    <section style="max-width:600px; margin:20px auto; text-align:left;">
+        <h2>Confirme sua presença</h2>
+        <form style="font-weight: bold; background-color:#e9ecef; padding:5px; border-radius:10px;">
+            
+            <label>Nome do convidado:</label>
+            <input type="text" name="nome" placeholder="Digite seu nome" required
+                   style="display:block; margin:10px 0; padding:8px; width:95%;">
+
+            <label>Email ou telefone:</label>
+            <input type="text" name="contato" placeholder="Digite seu email ou telefone" required
+                   style="display:block; margin:10px 0; padding:8px; width:95%;">
+
+            <label>Número de acompanhantes:</label>
+            <input type="number" name="acompanhantes" min="0" value="0"
+                   style="display:block; margin:10px 0; padding:8px; width:95%;">
+
+            <label>Prato preferido:</label>
+            <select name="prato" style="display:block; margin:10px 0; padding:8px; width: 98%;">
+                <option value="risoto">Risoto</option>
+                <option value="sushi">Sushi</option>
+                <option value="hamburguer">Hambúrguer</option>
+                <option value="pizza">Pizza</option>
+            </select>
+
+            <label>Observações:</label>
+            <textarea name="observacoes" rows="4" placeholder="Digite observações..."
+                      style="display:block; margin:10px 0; padding:8px; width:95%;"></textarea>
+
+            <!-- Botão de enviar -->
+            <button type="submit"
+                    style="background-color:#023047; color:white; padding:10px; border:none; border-radius:6px; cursor:pointer; text-align:center; display:block; width:200px; margin:10px auto;">
+                Confirmar Presença
+            </button>
+        </form>
+    </section>
+
+    <!-- Botão Instagram -->
+    <a href="https://www.instagram.com/saboresdomundo/" target="_blank"
+       style="background-color:#023047; color:white; padding:10px; border:none; border-radius:6px; cursor:pointer; text-decoration:none; text-align:center; display:block; width:200px; margin:20px auto;">
+       Siga no Instagram
+    </a>
+
+</body>
+</html>
