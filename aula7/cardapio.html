@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🍔Pedido - Lanchonete</title>
+</head>
+<body style="margin: 1  ; height: 100%; 
+font-family: system-ui, Segoe UI, Roboto, Arial, sans-serif; background-color: #d87575;color: #333; line-height: 1.65;">
+  <h1 style="color: aliceblue;">🍔Faça seu Pedido</h1>
+
+  <form>
+    <!-- Dados do cliente -->
+    <fieldset style="color: aliceblue;">
+      <legend><strong>Dados do cliente</strong></legend>
+
+      <label for="nome">Nome:</label><br>
+      <input style="width: auto;" type="text" name="nome" placeholder="Digite seu nome" required><br><br>
+
+      <label for="telefone">Telefone:</label><br>
+      <input style="width: auto;" name="telefone" placeholder="Ex.: (11) 91234-5678" required>
+    </fieldset>
+
+    <br>
+
+    <!-- Escolha do lanche -->
+    <fieldset style="color: aliceblue;">
+      <legend><strong>Escolha um lanche</strong></legend>
+      <label>
+        <input type="radio" name="lanche" value="x-salada" required>
+        X-Salada
+      </label><br>
+      <label>
+        <input type="radio" name="lanche" value="x-bacon">
+        X-Bacon
+      </label><br>
+      <label>
+        <input type="radio" name="lanche" value="x-frango">
+        X-Frango
+      </label>
+    </fieldset>
+
+    <br>
+
+    <!-- Adicionais (múltipla escolha) -->
+    <fieldset style="color: aliceblue;">
+      <legend><strong>Adicionais (opcional)</strong></legend>
+      <label>
+        <input  type="checkbox" name="adicionais" value="batata-frita">
+        Batata frita
+      </label><br>
+      <label>
+        <input type="checkbox" name="adicionais" value="nuggets">
+        Nuggets
+      </label><br>
+      <label>
+        <input type="checkbox" name="adicionais" value="onion-rings">
+        Onion Rings
+      </label>
+    </fieldset>
+
+    <br>
+
+    <!-- Bebida -->
+    
+
+    <fieldset style="color: aliceblue;">
+      <legend><strong>Bebida</strong></legend>
+        <select style="font-family: system-ui, Segoe UI, Roboto, Arial, sans-serif; height: 30px; width: auto; color: #5f5f5f;" name="Bebida" id="">
+            <option value="refrigerante">Refrigerante</option>
+            <option value="suco">Suco</option>
+            <option value="agua">Água</option>
+            <option value="milkshake">Milkshake</option>
+        </select>
+    </fieldset>
+
+    <br>
+
+    <!-- Observações -->
+     <fieldset style="color: aliceblue;">
+        <legend><strong>Observações</strong></legend>
+        <textarea id="observacoes" name="observacoes" rows="5" cols="40" placeholder='Ex.: "sem cebola", "bem passado"'></textarea>
+    </fieldset>
+    <br><br>
+
+    <button style="font-size: 20px;padding: 16; border-radius: 160; color: #5f5f5f;" type="submit;">Enviar Pedido</button>
+  </form>
+</body>
+</html>
