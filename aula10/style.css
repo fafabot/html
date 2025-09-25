@@ -1,0 +1,21 @@
+ body {
+     background-image: url(img/maxresdefault.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+     /*scroll*/
+     background-color: aqua;
+ }
+
+ body::before {
+     content: "";
+     position: absolute;
+     inset: 0;
+     background-color: rgba(165, 6, 6, 0.151);
+    
+ }
+
+ p {
+     font-size: 90px;
+ }
