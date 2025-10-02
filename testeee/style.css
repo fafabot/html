@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color:gray;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.conteudo {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.caixa-absolute {
+    width: 150px;
+    height: 150px;
+    background: crimson;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-sticky {
+    width: 150px;
+    height: 80px;
+    background: seagreen;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    margin: 20px 0;
+}
+
+.caixa-relative {
+    width: 150px;
+    height: 80px;
+    background: orange;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
