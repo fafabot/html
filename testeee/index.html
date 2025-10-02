@@ -1,0 +1,88 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Curiosidades sobre Rafael</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <h1>Curiosidades</h1>
+    <ul>
+      <li><a href="#comida">Comida</a></li>
+      <li><a href="#hobby">Hobby</a></li>
+      <li><a href="#lugar">Lugar</a></li>
+      <li><a href="#filme">Filme</a></li>
+      <li><a href="#musica">Música</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="comida">
+      <h2>Minha comida favorita</h2>
+      <h3>Pizza</h3>
+      <img src="Batata-frita.jpg" alt="Batata Frita">
+      <p>Minha comida favorita é pizza — especialmente a de borda recheada, com bastante queijo e molho de tomate fresco. Pizza combina com momentos de lazer: jogar com amigos, assistir filmes e reuniões em família.</p>
+    </section>
+
+    <section id="hobby">
+      <h2>Meu hobby favorito</h2>
+      <h3>Jogar videogame</h3>
+      <img src="musica.jpg" alt="Música">
+      <p>Meu passatempo favorito é jogar videogame — tanto online quanto offline. Gosto de jogos que desafiam o raciocínio lógico, permitem cooperação com amigos e contam boas histórias. É a forma que encontrei para relaxar e me divertir.</p>
+    </section>
+
+    <section id="lugar">
+      <h2>Um lugar que quero conhecer</h2>
+      <h3>Paris, França</h3>
+      <img src="paris.png" alt="Cidade de Paris">
+      <p>Quero conhecer Tóquio porque é uma cidade que mistura tradição e tecnologia de forma única. Tenho interesse na cultura pop japonesa (animes, jogos), na culinária e nos bairros icônicos como Shibuya e Akihabara. Seria uma experiência inesquecível!</p>
+    </section>
+
+    <section id="filme">
+      <h2>Filme favorito</h2>
+      <h3>Zathura: Uma Aventura Espacial</h3>
+      <div class="highlight">"Você aceita o mundo como ele é — ou opta por viver em outra realidade?"</div>
+      <h4>Personagens principais</h4>
+      <ul>
+        <li>Danny</li>
+        <li>Walter</li>
+        <li>Zorgon</li>
+      </ul>
+      <h4>Atores principais</h4>
+      <ul>
+        <li>Jonah Bobo</li>
+        <li>Josh Hutcherson</li>
+        <li>Dax Shepard</li>
+      </ul>
+    </section>
+
+    <section id="musica">
+      <h2>Cantor favorita</h2>
+      <h3>Roddie</h3>
+      <h4>História</h4>
+      <p>Rodrigo, mais conhecido como roddie, ou anteriormente conhecido por rodshawty, é um músico e produtor brasileiro. Com um grande histórico de singles, feats e produções para artistas como Big Rush, SEITHÈN, Lippi, Flameboi Matt, virgingod*, pluglip, etc., recentemente lançou seu primeiro albúm em 17/01/2024, “versos que nao sao pra vc”. Possui um EP colaborativo com o virgingod*, “MUITO AMOR”, lançado em 2021.</p>
+      <h4>Músicas</h4>
+      <p>Gosto desse artista pelas letras inspiradoras e pela energia contagiante de suas músicas. É perfeita para ouvir quando quero isolar minha mente</p>
+      <ul>
+        <li>Planos</li>
+        <li>mil refrões</li>
+        <li>como antes</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Feito por Rafael de Aquino Souza © 2025</p>
+  </footer>
+
+  <script>
+    // Rolagem suave entre seções
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e){
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+      });
+    });
+  </script>
+</body>
+</html>
