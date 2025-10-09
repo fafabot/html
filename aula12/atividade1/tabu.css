@@ -1,0 +1,57 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(4, 100px);
+    grid-area: auto;
+}
+
+        
+
+#c1 {
+    background-color: lightgray;
+}
+
+#c2 {
+    background-color: lightblue;
+}
+
+#c3 {
+    background-color: lightgreen;
+}
+
+#c4 {
+    background-color: lightcoral;
+}
+
+#c5 {
+    background-color: lightgoldenrodyellow;
+}
+
+#c6 {
+    background-color: lightsalmon;
+}
+
+#c7 {
+    background-color: lightpink;
+}
+
+#c8 {
+    background-color: lightseagreen;
+}   
+
+#c9 {
+    background-color: lightsteelblue;
+}
+
+#c10 {
+    background-color: lightyellow;
+}
+
+#c11 {
+    background-color: lightcyan;
+}
+
+#c12 {
+    background-color: lightgoldenrodyellow;
+}
+

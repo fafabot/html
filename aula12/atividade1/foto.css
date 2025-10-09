@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #ecf0f1;
+    margin: 0;
+    text-align: center;
+}
+
+main {
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #2c3e50;
+  padding: 15px 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+h1#titulo {
+    margin-left: 50px;
+  margin-bottom: 15px;
+  color: #f0f0f0;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#direita{
+    height: 300px;
+    background-image: url(img/20141211_214429.jpg);
+    background-size: cover;
+    background-position: right;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.galeria img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
