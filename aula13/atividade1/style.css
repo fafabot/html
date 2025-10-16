@@ -1,9 +1,10 @@
-
-
-
-
 body {
     text-align: center;
+    margin: 50px;
+}
+
+*{
+    transition-timing-function: linear;
 }
 
 .atv{
@@ -20,7 +21,7 @@ body {
     width: 100px;
     height: 100px;
     background-color: lightblue;
-    transition: 4s; 
+    transition: 1s; 
     border-radius: 16px;
 }
 .colorido:hover{
@@ -57,7 +58,7 @@ body {
     color: white;
     border-color: tomato;
     transition: 2s;
-    transition-delay: 1s;
+    transition-delay: 0.5s;
 }
 
 /* ex 4 */
