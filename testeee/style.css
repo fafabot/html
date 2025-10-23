@@ -1,136 +1,59 @@
-
-
-
-
 body {
-    text-align: center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
-.atv{
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    align-items: center;
-    transition-timing-function: ease-in;
-}
-/* ex 1 */
-.colorido{
-    width: 100px;
-    height: 100px;
-    background-color: lightblue;
-    transition: 4s; 
-    border-radius: 16px;
-}
-.colorido:hover{
-    background-color: lightgreen;
-    transition: 4s; 
+.caixa {
+  width: 300px;
+  height: 200px;
+  border: 3px solid #333;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(#001f3f, #87ceeb); /* Céu escuro -> claro */
+  animation: clarear 5s ease-in-out forwards;
 }
 
-/* ex 2 */
-
-.crescer{
-    border-radius: 16px;
-    background-color: lightcoral;
-    width: 100px;
-    height: 100px;
-    transition: 2s;
-}
-.crescer:hover{
-    width: 200px;
-    height: 200px;
-}
-
-/* ex 3 */
-.atraso{
-    border-radius: 16px;
-    background-color: lightseagreen;
-    width: 100px;
-    height: 100px;
-    transition: 1s;
-    transition-delay: 0.5s;
-
-}
-.atraso:hover{
-    background-color: lightpink;
-    color: white;
-    border-color: tomato;
-    transition: 2s;
-    transition-delay: 1s;
+/* Sol */
+.sol {
+  width: 60px;
+  height: 60px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -60px; /* Começa escondido */
+  left: 50%;
+  transform: translateX(-50%);
+  animation: nascer 5s ease-in-out forwards;
 }
 
-/* ex 4 */
-.cartao{
-    justify-self: center;
-    display: flex;
-    align-items: center;
-    width: 200px;
-    height: 300px;
-    background-color: white;
-    border-radius: 16px;
-    box-shadow: 4px 4px 8px gray;
-    transition: 1s;
-    align-items: center;
-}
-.cartao:hover{
-    background-color: lightyellow;
-    box-shadow: 8px 8px 16px gray;
-    transform: scale(1.1);
-    transition: 1s;
-}
-.cartao p{
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+/* Chão (opcional) */
+.caixa::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: #228b22; /* Verde da grama */
 }
 
-/* ex 5 */
-.texto p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color: black;
-    transition: 1s;
-}
-.texto:hover p{
-    color: orange;
-    font-size: 30px;
-    transition: 1s;
-}
-#texto2{
-    transition-delay: 0.5s;
+/* Animação do sol subindo */
+@keyframes nascer {
+  0% {
+    bottom: -60px;
+  }
+  100% {
+    bottom: 60px;
+  }
 }
 
-/* ex 6 */
-img{
-    width: 400px;
-    border-radius: 16px;
-    transition: 1s;
-}
-img:hover{
-    width: 600px;
-    transition: 1s;
-}
-
-/* ex 7 */
-.menu{
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    justify-content: center;
-}
-.menu a{
-    padding: 10px;
-    border-radius: 8px;
-    background-color: lightgray;
-    transition: 0.5s;
-    text-decoration: none;
-}
-.menu a:hover{
-    text-decoration: underline;
-    background-color: gray;
-    color: white;
-    transition: 0.5s;
+/* Animação do céu clareando */
+@keyframes clarear {
+  0% {
+    background: linear-gradient(#001f3f, #1e90ff);
+  }
+  100% {
+    background: linear-gradient(#87ceeb, #ffffff);
+  }
 }
