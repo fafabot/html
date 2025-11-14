@@ -1,0 +1,236 @@
+/* Importação da fonte (se necessário, já está no HTML) */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
+
+:root {
+    --bg-color: #f7f7e9; /* Fundo creme/amarelado claro */
+    --header-bg: #fff;
+    --main-border-color: #d1e2c4; /* Borda verde clara */
+    --form-bg: #ffffff;
+    --blue-text: #0b5394; /* Azul para títulos e links */
+    --btn-blue: #3a79b8; /* Azul escuro do botão */
+    --btn-hover: #2c5a89;
+    --input-border: #ccc;
+    --green-circle-light: #a3c988; /* Verde claro dos círculos */
+    --blue-circle: #6fa8dc; /* Azul dos círculos */
+    --footer-text: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Header e Navegação --- */
+.header {
+    background-color: var(--header-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 30px; /* Ajuste conforme o logo real */
+    height: 30px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-weight: 700;
+    color: var(--blue-text);
+    margin-right: 5px;
+    font-size: 1.2em;
+}
+
+.logo-subtitle {
+    font-size: 0.7em;
+    color: #555;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--blue-text);
+    margin-left: 30px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.nav-menu a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--blue-text);
+}
+
+.login-area {
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    font-size: 1.5em;
+    margin-right: 5px;
+    color: #555;
+}
+
+.login-area a {
+    text-decoration: none;
+    color: var(--blue-text);
+    font-weight: 700;
+}
+
+/* --- Conteúdo Principal e Formulário --- */
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    position: relative; /* Para posicionar os círculos */
+    overflow: hidden;
+}
+
+.form-container {
+    background-color: var(--form-bg);
+    border: 1px solid var(--main-border-color);
+    border-radius: 8px;
+    padding: 40px 60px;
+    width: 100%;
+    max-width: 650px; /* Largura ajustada para ser similar à imagem */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10; /* Para ficar acima dos círculos */
+}
+
+.form-title {
+    color: var(--blue-text);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 1.1em;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    font-size: 1em;
+    color: #333;
+}
+
+.form-group input::placeholder {
+    color: #aaa;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--btn-blue);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--btn-hover);
+}
+
+/* --- Elementos Decorativos (Círculos) --- */
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(20px); /* Para dar um efeito de desfoque */
+}
+
+.blue-circle-left {
+    background-color: var(--blue-circle);
+    width: 120px;
+    height: 120px;
+    top: 25%;
+    left: 15%; /* Posição aproximada na imagem */
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+}
+
+.green-circle-left {
+    background-color: var(--green-circle-light);
+    width: 180px;
+    height: 180px;
+    bottom: 0;
+    left: 0;
+    transform: translate(-40%, 40%);
+    opacity: 0.7;
+}
+
+.green-circle-right {
+    background-color: var(--green-circle-light);
+    width: 250px;
+    height: 250px;
+    top: 0;
+    right: 0;
+    transform: translate(40%, -40%);
+    opacity: 0.7;
+}
+
+.blue-circle-right {
+    background-color: var(--blue-circle);
+    width: 200px;
+    height: 200px;
+    bottom: 0;
+    right: 0;
+    transform: translate(40%, 40%);
+    opacity: 0.7;
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: transparent;
+    padding: 15px 50px;
+    color: var(--footer-text);
+    font-size: 0.75em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+
+.footer p:first-child {
+    font-weight: 700;
+}

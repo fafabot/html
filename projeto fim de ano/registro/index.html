@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SFAE - Registrar Nova Falta</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="placeholder_logo.png" alt="SFAE Logo" class="logo-img"> <span class="logo-text">SFAE</span>
+            <span class="logo-subtitle">SISTEMA DE FALTAS E PRESENÇAS</span>
+        </div>
+        <nav class="nav-menu">
+            <a href="#">Registro de Faltas</a>
+            <a href="#">Justificativas</a>
+            <a href="#">Presenças</a>
+        </nav>
+        <div class="login-area">
+            <div class="user-icon">👤</div>
+            <a href="#">Login</a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="form-container">
+            <h1 class="form-title">REGISTRAR NOVA FALTA</h1>
+
+            <form>
+                <div class="form-group">
+                    <label for="aluno">Nome do aluno</label>
+                    <input type="text" id="aluno" name="aluno" placeholder="Digite o nome do aluno">
+                </div>
+
+                <div class="form-group">
+                    <label for="turma">Turma</label>
+                    <input type="text" id="turma" name="turma" placeholder="Ex: 2 Ano A">
+                </div>
+
+                <div class="form-group">
+                    <label for="data">Data</label>
+                    <input type="text" id="data" name="data" placeholder="dd/mm/aaaa">
+                </div>
+
+                <div class="form-group">
+                    <label for="materia">Matéria</label>
+                    <input type="text" id="materia" name="materia" placeholder="Digite o nome da disciplina">
+                </div>
+
+                <button type="submit" class="submit-btn">REGISTRAR FALTA</button>
+            </form>
+        </div>
+
+        <div class="circle blue-circle-left"></div>
+        <div class="circle green-circle-left"></div>
+        <div class="circle green-circle-right"></div>
+        <div class="circle blue-circle-right"></div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 SFAE - SISTEMA DE FALTAS E PRESENÇAS</p>
+        <p>DESENVOLVIDO POR ALUNOS SENAI</p>
+    </footer>
+</body>
+</html>

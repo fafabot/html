@@ -1,0 +1,10 @@
+.fonte1 {
+    font-family: "Monsieur La Doulaise", cursive;
+}
+@font-face {
+    font-family: "badeen";
+    src: url("font/BadeenDisplay-Regular.ttf") format("truetype");
+}
+.fonte2 {
+    font-family: "badeen", sans-serif;
+}
