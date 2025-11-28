@@ -1,59 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    height: 30px;
+    width: 600px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+input {
+    width: 595px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.caixa-login {
+    width: 600px;
+    height: 90%;
+    padding: 30px;
+    background-color: #f4f3ea;
+    border: 3px solid #ddd;
+    border-radius: 20px;
+    margin: 50px auto;
+    text-align: center;
+    transform: scale(1.2);
+}
+
+.login {
+    text-align: left;
+}
+
+.imggoogle {
+    width: 20px;
+    height: 20px;
+}
+.entrar {
+    margin-top: 5px;
+}
+
+.Continue {
+    margin-top: 5px;
+    border: 2px solid#000000;
+    border-radius: 5px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+}
+
+.logo {
+    width: 350px;
+    height: 150px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.ou {
+    display: flex;
+}
+
+.linha {
+    background-color: #000000;
+    width: 100%;
+    height: 1px;
+}
+
+.ou p {
+    margin: 0 10px;
+}
+
 body {
-  display: flex;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+    background-image: url(imglogin/background.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.caixa {
-  width: 300px;
-  height: 200px;
-  border: 3px solid #333;
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(#001f3f, #87ceeb); /* Céu escuro -> claro */
-  animation: clarear 5s ease-in-out forwards;
+a .ahref {
+    height: 100px;
 }
 
-/* Sol */
-.sol {
-  width: 60px;
-  height: 60px;
-  background-color: yellow;
-  border-radius: 50%;
-  position: absolute;
-  bottom: -60px; /* Começa escondido */
-  left: 50%;
-  transform: translateX(-50%);
-  animation: nascer 5s ease-in-out forwards;
-}
-
-/* Chão (opcional) */
-.caixa::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 40px;
-  background: #228b22; /* Verde da grama */
-}
-
-/* Animação do sol subindo */
-@keyframes nascer {
-  0% {
-    bottom: -60px;
-  }
-  100% {
-    bottom: 60px;
-  }
-}
-
-/* Animação do céu clareando */
-@keyframes clarear {
-  0% {
-    background: linear-gradient(#001f3f, #1e90ff);
-  }
-  100% {
-    background: linear-gradient(#87ceeb, #ffffff);
-  }
+footer {
+    padding-top: 930px;
 }

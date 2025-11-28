@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="presenca.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+    <div class="nav-container">
+        <div class="logo">
+           <a href="../index.html"><img src="../img/logo.png" alt="SFAE Logo"></a>
+        </div>
+        <nav class="menu">
+            <a href="../chamada/chamada.html">Chamada de aula</a>
+            <a href="../relatório/relatorio.html">Relatório</a>
+            <a href="../justificativa/justifica.html">Justificativas</a>
+            <a>Presenças</a>
+        </nav>
+    </div>
+    <div class="login">
+        <a href="../login/login.html"><img src="../img/icone usuario (1).png" alt=""></a>
+        <a href="../login/login.html"><span>Login</span></a>
+    </div>
+</header>
+    <main>
+        <section class="presenca">
+            <h1>PRESENÇA</h1>
+            <div class="filtros chamada-form">
+            <select>
+                <option disabled selected>Selecione a turma</option>
+                <option value="2A">2° Ano A</option>
+                <option value="2B">2° Ano B</option>
+                <option value="3A">3° Ano A</option>
+            </select>
+
+            <input type="date">
+
+            <input type="text" placeholder="Pesquisar por nome...">
+
+            <select>
+                <option disabled selected>Selecione a matéria</option>
+            </select>
+        </div>
+            </form>
+        <div class="tabela-presenca">
+            <table>
+                <tr>
+                    <th>Aluno</th>
+                    <th>Turma</th>
+                    <th>Data</th>
+                    <th>Matéria</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Rafael Aquino Souza</td>
+                    <td>2º Ano A</td>
+                    <td>13/11/2025</td>
+                    <td>Matematica</td>
+                    <td class="presente">Presente</td>
+                </tr>
+                <tr>
+                    <td>Rafael Aquino Souza</td>
+                    <td>2º Ano A</td>
+                    <td>14/11/2025</td>
+                    <td>Matematica</td>
+                    <td class="falta">Falta</td>
+                </tr>
+                <tr>
+                    <td>Rafael Aquino Souza</td>
+                    <td>2º Ano A</td>
+                    <td>14/11/2025</td>
+                    <td>Matematica</td>
+                    <td class="falta">Falta</td>
+                </tr>
+            </table>
+        </div>
+        </section>
+    </main>
+    <footer>
+        <p>@ 2025 SFAE - SISTEMA DE FALTAS E PRESENÇAS</p>
+        <p>DESENVOLVIDOS POR ALUNOS SENAI</p>
+    </footer>
+</body>
+
+</html>
